@@ -50,12 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-<<<<<<< HEAD
+
           asset_path: ./latex/CHAPTER6.pdf
           asset_name: CHAPTER6.pdf
           asset_content_type: pdf
-=======
-          asset_path: ./LaTex/6.pdf
-          asset_name: 6.pdf
-          asset_content_type: pdf
->>>>>>> e8e213ddfb697c0d5594b9ce1e8650771d33ffb3
+
