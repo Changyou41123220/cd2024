@@ -23,17 +23,9 @@ jobs:
       - name: Test LaTeX
         working-directory: ./latex
         run: |
-<<<<<<< HEAD
-              CHAPTER6.tex
-              CHAPTER6.tex
-              CHAPTER6.tex
-
-=======
-            xelatex 6.tex
-	    xelatex 6.tex
-     	    xelatex 6.tex
-	    
->>>>>>> e8e213ddfb697c0d5594b9ce1e8650771d33ffb3
+              xelatex CHAPTER6.tex
+              xelatex CHAPTER6.tex
+              xelatex CHAPTER6.tex
       - name: Bump version and push tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.1
