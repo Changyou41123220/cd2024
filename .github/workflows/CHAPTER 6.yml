@@ -23,7 +23,9 @@ jobs:
       - name: Test LaTeX
         working-directory: ./LaTex
         run: |
-            xelatex cd_6. CHAPTER.tex
+            xelatex 6.tex
+	    xelatex 6.tex
+     	    xelatex 6.tex
 	    
       - name: Bump version and push tag
         id: tag_version
@@ -49,6 +51,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./LaTex/CHAPTER 6.pdf
-          asset_name: CHAPTER 6.pdf
+          asset_path: ./LaTex/6.pdf
+          asset_name: 6.pdf
           asset_content_type: pdf
