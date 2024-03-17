@@ -23,9 +23,9 @@ jobs:
       - name: Test LaTeX
         working-directory: ./latex
         run: |
-            cd_6. CHAPTER.tex
-	    cd_6. CHAPTER.tex
-	    cd_6. CHAPTER.tex
+            xelatex cd_6. CHAPTER.tex
+	    xelatex cd_6. CHAPTER.tex
+	    xelatex cd_6. CHAPTER.tex
 
       - name: Bump version and push tag
         id: tag_version
