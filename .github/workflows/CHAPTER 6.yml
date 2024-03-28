@@ -21,7 +21,7 @@ jobs:
         run:
           sudo apt install -y texlive texlive-xetex texlive-lang-chinese gsfonts fonts-moe-standard-kai ttf-mscorefonts-installer librsvg2-bin texlive-fonts-extra 
       - name: Test LaTeX
-        working-directory: ./latex
+        working-directory: ./LaTex
         run: |
               xelatex CHAPTER6.tex
               xelatex CHAPTER6.tex
@@ -51,7 +51,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
 
-          asset_path: ./latex/CHAPTER6.pdf
+          asset_path: ./LaTex/CHAPTER6.pdf
           asset_name: CHAPTER6.pdf
           asset_content_type: pdf
 
